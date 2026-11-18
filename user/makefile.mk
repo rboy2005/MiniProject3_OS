@@ -11,6 +11,7 @@ USER_PROGS := \
 	tester\
 	testerB\
 	testerC\
+	test1-test2-test3\
 	init\
 	kill\
 	ln\
@@ -84,7 +85,7 @@ USER_LDFLAGS += --omagic
 USER_LDFLAGS += --entry=main
 
 # location in memory where the program will be loaded
-USER_LDFLAGS += --section-start=.text=0x0
+USER_LDFLAGS += --section-start=.text=0x1000
 
 user/bin:
 	mkdir -p user/bin
